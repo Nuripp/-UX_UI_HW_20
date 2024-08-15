@@ -508,3 +508,72 @@ nav li.nav-hover::before {
     height: auto;
     border-radius: 10px;
 }
+
+/* IA section*/
+.IA-section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.IA-section h3 {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.IA-section h2 {
+    margin-top: -40px;
+}
+
+.IA-section p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.IA-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+
+/* UI Design section*/
+.UI-section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.UI-section h3 {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.UI-section h2 {
+    margin-top: -40px;
+}
+
+.UI-section p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+
+.row {
+    margin-bottom: 60px;
+}
+
+.small-image {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.cardContainer {
+    margin-bottom: 20px;
+}
