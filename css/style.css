@@ -1,7 +1,7 @@
 
 body {
     font-family: "DM Sans", sans-serif;
-    background-color: #EDE7DF;
+    background-color: #EDE7DF !important;
 }
 
 h1 {
@@ -362,12 +362,13 @@ nav li.nav-hover::before {
 }
 
 /* Dashed Line */
-.dashed-hr {
+
+hr.dashed-hr {
+    border: none;
     width: 100%;
     margin: 80px auto;
-    border: none;
-    border-top: 2px dashed black;
 }
+
 
 /* Research section*/
 .research-section {
@@ -404,7 +405,7 @@ nav li.nav-hover::before {
 }
 
 .current-website-description p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
@@ -433,7 +434,7 @@ nav li.nav-hover::before {
 }
 
 .user-path-content p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 40px;
 }
@@ -453,13 +454,13 @@ nav li.nav-hover::before {
 }
 
 .usability-tests p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 110px;
 }
 
 .usability-tests h4 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 40px;
 }
 
@@ -527,9 +528,10 @@ nav li.nav-hover::before {
 }
 
 .IA-section p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 40px;
+    text-align: left;
 }
 
 .IA-section img {
@@ -559,7 +561,7 @@ nav li.nav-hover::before {
 }
 
 .UI-section p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 60px;
 }
@@ -576,4 +578,157 @@ nav li.nav-hover::before {
 
 .cardContainer {
     margin-bottom: 20px;
+}
+
+.accordion-body {
+    line-height: 0.1;
+}
+
+.accordion-header{
+    font-family: "DM Sans", sans-serif;
+}
+
+.moodboard-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px; 
+}
+
+.moodboard h3 {
+    margin-bottom: 100px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    color: #000 !important;
+}
+
+.styleGuide-img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px; 
+}
+
+.prototype-section{
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.prototype-section h3 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.prototype-section h2 {
+    margin-top: -40px;
+}
+
+.iteration-description {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.iteration p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.hi-fi-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    margin-top: 60px;
+}
+
+.hi-fi-img img {
+    height: auto;
+    display: block;
+}
+
+.hi-fi-img img:first-child {
+    max-width: 45%;
+}
+
+.hi-fi-img img:last-child {
+    max-width: 20%;
+}
+
+.hi-fi p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.userTesting {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.userTestingPlan img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px; 
+}
+
+.testingPlan h3 {
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.userTesting h2 {
+    margin-top: -60px;
+}
+
+.testingResults h3 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.results p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.results h4{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-top: 80px;
+}
+
+.user-feedback2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-bottom: 50px;
+}
+
+.feedback-item2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.feedback-img2 {
+    max-width: 300px;
+    height: auto;
+    align-self: center;
 }
