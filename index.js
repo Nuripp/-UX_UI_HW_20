@@ -88,3 +88,30 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const progressBarSection = document.querySelector('.progress-bar-section');
+    const progressBar = document.querySelector('.progress-bar');
+    const navBar = document.querySelector('.navigation');
+    const navBarHeight = navBar.offsetHeight; 
+    const progressBarHeight = progressBar.offsetHeight; 
+    const offset = navBarHeight + progressBarHeight;
+
+    const phases = document.querySelectorAll('.phase');
+
+    phases.forEach(phase => {
+        phase.addEventListener('click', function() {
+            const targetId = phase.textContent.toLowerCase().replace(/ /g, '-');
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - offset;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});

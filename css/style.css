@@ -367,9 +367,9 @@ nav li.nav-hover::before {
 
 .progress-bar.fixed {
     position: fixed;
-    top: 20% !important;
+    top: 27% !important;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     width: 100%;
     z-index: 999;
     background-color: gray;
@@ -1058,4 +1058,24 @@ footer {
 }
 
 
+/* 화면 너비가 1024px 이하일 때 */
+@media (max-width: 1024px) {
+    .progress-bar .fixed {
+        top: 35% !important; /* 더 작은 화면에서 top 값을 25%로 조정 */
+    }
+}
+
+/* 화면 너비가 768px 이하일 때 */
+@media (max-width: 768px) {
+    .progress-bar .fixed {
+        top: 30% !important; /* 더 작은 화면에서 top 값을 30%로 조정 */
+    }
+}
+
+/* 화면 너비가 600px 이하일 때 */
+@media (max-width: 600px) {
+    .progress-bar .fixed {
+        top: 30% !important; /* 모바일 화면에서 top 값을 35%로 조정 */
+    }
+}
 
