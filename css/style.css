@@ -339,7 +339,7 @@ nav li.nav-hover::before {
 .phase {
     flex: 1;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     font-size: 16px;
     font-weight: 700;
     color: black;
@@ -367,9 +367,9 @@ nav li.nav-hover::before {
 
 .progress-bar.fixed {
     position: fixed;
-    top: 23%;
+    top: 20% !important;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     width: 100%;
     z-index: 999;
     background-color: gray;
@@ -1057,8 +1057,5 @@ footer {
     border-radius: 3px;
 }
 
-@media (max-width: 1400px) {
-    .progress-bar.fixed {
-        top: 37%; /* 더 아래로 위치 조정 */
-    }
-}
+
+

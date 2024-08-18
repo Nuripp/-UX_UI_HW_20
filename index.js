@@ -2,21 +2,38 @@ document.addEventListener('DOMContentLoaded', function() {
     const progressBarSection = document.querySelector('.progress-bar-section');
     const progressBar = document.querySelector('.progress-bar');
     const navBar = document.querySelector('.navigation');
-    const navBarHeight = navBar.offsetHeight;
     const progressBarTop = progressBarSection.offsetTop;
 
+    function adjustProgressBarPosition() {
+        const navBarHeight = navBar.offsetHeight;
+        console.log('navBarHeight:', navBarHeight, 'extraSpace:', extraSpace);
+
+        if (progressBar.classList.contains('fixed')) {
+            progressBar.style.top = `${navBarHeight + extraSpace}px`;
+            console.log('Fixed Top:', progressBar.style.top);
+        } else {
+            progressBar.style.top = `${progressBarTop - navBarHeight + extraSpace}px`;
+            console.log('Original Top:', progressBar.style.top);
+        }
+    }
+
     window.addEventListener('scroll', function() {
+        const navBarHeight = navBar.offsetHeight;
+        const extraSpace = 20; // 테스트를 위해 크게 설정
         if (window.scrollY > progressBarTop - navBarHeight) {
             progressBar.classList.add('fixed');
+            progressBar.style.top = `${navBarHeight + extraSpace}px`;
         } else {
             progressBar.classList.remove('fixed');
+            adjustProgressBarPosition();
         }
     });
 
+    adjustProgressBarPosition();
+    window.addEventListener('resize', adjustProgressBarPosition);
 
     const phases = document.querySelectorAll('.phase');
-    const progressBarHeight = progressBar.offsetHeight; 
-    const offset = navBarHeight + progressBarHeight;
+    const offset = navBar.offsetHeight + progressBar.offsetHeight;
 
     phases.forEach(phase => {
         phase.addEventListener('click', function() {
