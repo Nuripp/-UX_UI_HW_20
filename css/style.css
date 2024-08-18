@@ -10,7 +10,7 @@ h1 {
 
 h2 {
     font-family: 'Passion One', sans-serif;
-    font-size: 40px;
+    font-size: 60px !important;
     text-align: center;
 }
 
@@ -678,7 +678,7 @@ hr.dashed-hr {
 }
 
 .userTestingPlan img {
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -726,9 +726,143 @@ hr.dashed-hr {
     gap: 50px;
 }
 
-
 .feedback-img2 {
     max-width: 300px;
     height: auto;
     align-self: center;
+}
+
+.final-section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.final-section h2 {
+    margin-top: -40px;
+}
+
+.final-section h3 {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.final-desktop img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px; 
+}
+
+.final-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.final-images h5 {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.left-images, .right-images {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.left-images {
+    flex-basis: 48%;
+}
+
+.right-images {
+    flex-basis: 48%;
+}
+
+.right-images .right-img:first-child {
+    align-self: flex-start;
+}
+
+.right-images .right-img:last-child {
+    align-self: flex-start;
+    
+}
+
+.left-img, .right-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.final-mobile img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px; 
+}
+
+.final-desktop h5 {
+    margin-bottom: -40px;
+    margin-top: 80px;
+}
+
+.final-mobile h5 {
+    margin-bottom: -40px;
+    margin-top: 80px;
+}
+
+.final-images-mobile h5 {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.final-images-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+    gap: 80px;
+}
+
+
+.image-container-mobile img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.conclusion-section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.conclusion-section h2 {
+    margin-top: -40px;
+}
+
+.mockups {
+    margin-top: 80px;
+}
+
+.conclusion h3 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.conclusion p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.thanks h2 {
+    font-size: 80px;
+    margin-bottom: 100px;
 }
