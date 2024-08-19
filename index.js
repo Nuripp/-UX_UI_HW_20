@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (window.scrollY > progressBarTop - navBarHeight) {
             progressBar.classList.add('fixed');
-            progressBar.style.top = `${navBarHeight + extraSpace}px`;
+            progressBar.style.top = `${navBarHeight}px`;
         } else {
             progressBar.classList.remove('fixed');
             progressBar.style.top = '';
